@@ -29,12 +29,12 @@ bash myscript.sh
 ```
 
 2. **Set up environment variables:**
+   Copy the example environment file to create your local .env configuration.
    ```bash
    cp .env.example .env
    ```
-   Copy the example environment file to create your local .env configuration.
 
-3. **Start the application:**
+4. **Start the application:**
      Use Docker Compose to build the Go API and initialize the PostgreSQL database.
    ```bash
    docker-compose up --build -d
