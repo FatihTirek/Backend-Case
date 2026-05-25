@@ -22,12 +22,6 @@ To run this project locally, you only need to have the following installed on yo
    git clone [https://github.com/](https://github.com/)FatihTirek/football-league.git
    cd football-league
 
-   ## Usage
-Run the script from your terminal using:
-```bash
-bash myscript.sh
-```
-
 2. ## **Set up environment variables:**
    Copy the example environment file to create your local .env configuration.
    ```bash
