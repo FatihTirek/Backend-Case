@@ -24,7 +24,7 @@ To run this project locally, you only need to have the following installed on yo
 
 2. **Set up environment variables:**
 
-Copy the example environment file to create your local `.env` configuration.
+   Copy the example environment file to create your local `.env` configuration.
 
 ```bash
 cp .env.example .env
@@ -32,7 +32,7 @@ cp .env.example .env
 
 3. **Set up environment variables:**
 
-Use Docker Compose to build the Go API and initialize the PostgreSQL database. The database schema will be automatically applied on the first boot.
+   Use Docker Compose to build the Go API and initialize the PostgreSQL database. The database schema will be automatically applied on the first boot.
 
 ```bash
 cp .env.example .env
@@ -40,7 +40,7 @@ cp .env.example .env
 
 4. **Verify the services:**
 
-The GoLang API will be available at http://localhost:8080. The PostgreSQL database is exposed on port 5432 for local inspection (e.g., via DBeaver or DataGrip).
+   The GoLang API will be available at http://localhost:8080. The PostgreSQL database is exposed on port 5432 for local inspection (e.g., via DBeaver or DataGrip).
 
 5. **Stop the application:**
     ```bash
