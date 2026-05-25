@@ -30,16 +30,17 @@ Copy the example environment file to create your local `.env` configuration.
 cp .env.example .env
 ```
 
-4. **Start the application:**
-     Use Docker Compose to build the Go API and initialize the PostgreSQL database.
-   ```bash
-   docker-compose up --build -d
+3. **Set up environment variables:**
 
-Note: The database schema (001_initial_schema.sql) will automatically seed the database on the very first boot.
+Use Docker Compose to build the Go API and initialize the PostgreSQL database. The database schema will be automatically applied on the first boot.
+
+```bash
+cp .env.example .env
+```
 
 4. **Verify the services:**
-    The GoLang API will be available at http://localhost:8080.
-    The PostgreSQL database is exposed on port 5432 for local inspection (e.g., via DBeaver or DataGrip).
+
+The GoLang API will be available at http://localhost:8080. The PostgreSQL database is exposed on port 5432 for local inspection (e.g., via DBeaver or DataGrip).
 
 5. **Stop the application:**
     ```bash
