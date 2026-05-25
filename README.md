@@ -48,6 +48,11 @@ To run this project locally, you only need to have the following installed on yo
     ```bash
     docker-compose down
 
+## Database & SQL
+
+As requested, the SQL schema and queries required to run this project are included:
+* **Schema:** Located in `migrations/001_initial_schema.sql`. This file is automatically executed by Docker upon the initial database creation, seeding the initial teams and fixtures.
+* **Queries:** All raw SQL queries used for the simulation logic (fetching standings, updating match results, etc.) are written directly in the Go codebase. You can find them clearly defined in the `repository` folder.
 
 ## 🧪 Testing the API (Postman)
 
@@ -57,5 +62,5 @@ To make the evaluation process completely frictionless, I have included a compre
 
 1. **Locate the File:** Find the `Football League API.postman_collection` file in the root directory of this repository.
 2. **Import:** Open Postman, click **Import**, and select the `.json` file.
-3. [cite_start]**Pre-configured Environment:** All endpoints are already set up to hit `http://localhost:8080` with the correct headers and realistic JSON request bodies for features like editing match results[cite: 77].
+3. **Pre-configured Environment:** All endpoints are already set up to hit `http://localhost:8080` with the correct headers and realistic JSON request bodies for features like editing match results.
 4. **Saved Examples:** I have saved **Example Responses** for every request in the collection. You can click on the examples within Postman to see the exact expected JSON inputs and outputs without even needing to spin up the Docker container first!
