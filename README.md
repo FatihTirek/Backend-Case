@@ -40,9 +40,10 @@ To run this project locally, you only need to have the following installed on yo
 
 4. **Verify the services:**
 
-   The GoLang API will be available at http://localhost:8080. 
+   The GoLang API will be available at http://localhost:8080.
+   
    The PostgreSQL database is exposed on port 5432 for local inspection (e.g., via DBeaver or DataGrip).
 
-5. **Stop the application:**
+6. **Stop the application:**
     ```bash
     docker-compose down
