@@ -48,6 +48,12 @@ To run this project locally, you only need to have the following installed on yo
     ```bash
     docker-compose down
 
+## Database & SQL
+
+As requested, the SQL schema and queries required to run this project are included:
+* **Schema:** Located in `migrations/001_initial_schema.sql`. This file is automatically executed by Docker upon the initial database creation, seeding the initial teams and fixtures.
+* **Queries:** All raw SQL queries used for the simulation logic (fetching standings, updating match results, etc.) are written directly in the Go codebase. You can find them clearly defined in the `repository` folder.
+
 ## 🧪 Testing the API (Postman)
 
 Since a frontend is not required for this task, the application is designed to be easily understandable and fully testable via API endpoints. 
