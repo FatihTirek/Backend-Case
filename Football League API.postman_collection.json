@@ -1,6 +1,6 @@
 {
   "info": {
-    "_postman_id": "fea7659f-0500-4d73-9e48-7d052cb54c50",
+    "_postman_id": "5e9c9999-c5e7-4bcf-83ba-8754339a063f",
     "name": "Football League API",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "_exporter_id": "33465091"
@@ -25,7 +25,47 @@
           ]
         }
       },
-      "response": []
+      "response": [
+        {
+          "name": "GetTeams",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/v1/teams",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "teams"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 25 May 2026 20:49:21 GMT"
+            },
+            {
+              "key": "Content-Length",
+              "value": "231"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Manchester City\",\n            \"attack\": 1.8,\n            \"defense\": 1.3\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Liverpool\",\n            \"attack\": 1.6,\n            \"defense\": 1.2\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Arsenal\",\n            \"attack\": 1.4,\n            \"defense\": 1.1\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Chelsea\",\n            \"attack\": 1.2,\n            \"defense\": 1\n        }\n    ]\n}"
+        }
+      ]
     },
     {
       "name": "GetStandings",
@@ -46,7 +86,47 @@
           ]
         }
       },
-      "response": []
+      "response": [
+        {
+          "name": "GetStandings",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/v1/standings",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "standings"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 25 May 2026 20:49:50 GMT"
+            },
+            {
+              "key": "Content-Length",
+              "value": "546"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"data\": [\n        {\n            \"team_id\": 2,\n            \"team_name\": \"Liverpool\",\n            \"played\": 1,\n            \"won\": 1,\n            \"drawn\": 0,\n            \"lost\": 0,\n            \"goals_for\": 3,\n            \"goals_against\": 0,\n            \"goal_diff\": 3,\n            \"points\": 3\n        },\n        {\n            \"team_id\": 3,\n            \"team_name\": \"Arsenal\",\n            \"played\": 1,\n            \"won\": 0,\n            \"drawn\": 1,\n            \"lost\": 0,\n            \"goals_for\": 2,\n            \"goals_against\": 2,\n            \"goal_diff\": 0,\n            \"points\": 1\n        },\n        {\n            \"team_id\": 4,\n            \"team_name\": \"Chelsea\",\n            \"played\": 1,\n            \"won\": 0,\n            \"drawn\": 1,\n            \"lost\": 0,\n            \"goals_for\": 2,\n            \"goals_against\": 2,\n            \"goal_diff\": 0,\n            \"points\": 1\n        },\n        {\n            \"team_id\": 1,\n            \"team_name\": \"Manchester City\",\n            \"played\": 1,\n            \"won\": 0,\n            \"drawn\": 0,\n            \"lost\": 1,\n            \"goals_for\": 0,\n            \"goals_against\": 3,\n            \"goal_diff\": -3,\n            \"points\": 0\n        }\n    ]\n}"
+        }
+      ]
     },
     {
       "name": "GetAllMatches",
@@ -67,7 +147,47 @@
           ]
         }
       },
-      "response": []
+      "response": [
+        {
+          "name": "GetAllMatches",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/v1/matches",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "matches"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 25 May 2026 20:49:57 GMT"
+            },
+            {
+              "key": "Content-Length",
+              "value": "1824"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"week\": 1,\n            \"home_team_id\": 1,\n            \"away_team_id\": 2,\n            \"home_team\": \"Manchester City\",\n            \"away_team\": \"Liverpool\",\n            \"home_score\": 0,\n            \"away_score\": 3,\n            \"played\": true\n        },\n        {\n            \"id\": 2,\n            \"week\": 1,\n            \"home_team_id\": 3,\n            \"away_team_id\": 4,\n            \"home_team\": \"Arsenal\",\n            \"away_team\": \"Chelsea\",\n            \"home_score\": 2,\n            \"away_score\": 2,\n            \"played\": true\n        },\n        {\n            \"id\": 3,\n            \"week\": 2,\n            \"home_team_id\": 1,\n            \"away_team_id\": 3,\n            \"home_team\": \"Manchester City\",\n            \"away_team\": \"Arsenal\",\n            \"home_score\": null,\n            \"away_score\": null,\n            \"played\": false\n        },\n        {\n            \"id\": 4,\n            \"week\": 2,\n            \"home_team_id\": 2,\n            \"away_team_id\": 4,\n            \"home_team\": \"Liverpool\",\n            \"away_team\": \"Chelsea\",\n            \"home_score\": null,\n            \"away_score\": null,\n            \"played\": false\n        },\n        {\n            \"id\": 5,\n            \"week\": 3,\n            \"home_team_id\": 1,\n            \"away_team_id\": 4,\n            \"home_team\": \"Manchester City\",\n            \"away_team\": \"Chelsea\",\n            \"home_score\": null,\n            \"away_score\": null,\n            \"played\": false\n        },\n        {\n            \"id\": 6,\n            \"week\": 3,\n            \"home_team_id\": 2,\n            \"away_team_id\": 3,\n            \"home_team\": \"Liverpool\",\n            \"away_team\": \"Arsenal\",\n            \"home_score\": null,\n            \"away_score\": null,\n            \"played\": false\n        },\n        {\n            \"id\": 7,\n            \"week\": 4,\n            \"home_team_id\": 2,\n            \"away_team_id\": 1,\n            \"home_team\": \"Liverpool\",\n            \"away_team\": \"Manchester City\",\n            \"home_score\": null,\n            \"away_score\": null,\n            \"played\": false\n        },\n        {\n            \"id\": 8,\n            \"week\": 4,\n            \"home_team_id\": 4,\n            \"away_team_id\": 3,\n            \"home_team\": \"Chelsea\",\n            \"away_team\": \"Arsenal\",\n            \"home_score\": null,\n            \"away_score\": null,\n            \"played\": false\n        },\n        {\n            \"id\": 9,\n            \"week\": 5,\n            \"home_team_id\": 3,\n            \"away_team_id\": 1,\n            \"home_team\": \"Arsenal\",\n            \"away_team\": \"Manchester City\",\n            \"home_score\": null,\n            \"away_score\": null,\n            \"played\": false\n        },\n        {\n            \"id\": 10,\n            \"week\": 5,\n            \"home_team_id\": 4,\n            \"away_team_id\": 2,\n            \"home_team\": \"Chelsea\",\n            \"away_team\": \"Liverpool\",\n            \"home_score\": null,\n            \"away_score\": null,\n            \"played\": false\n        },\n        {\n            \"id\": 11,\n            \"week\": 6,\n            \"home_team_id\": 4,\n            \"away_team_id\": 1,\n            \"home_team\": \"Chelsea\",\n            \"away_team\": \"Manchester City\",\n            \"home_score\": null,\n            \"away_score\": null,\n            \"played\": false\n        },\n        {\n            \"id\": 12,\n            \"week\": 6,\n            \"home_team_id\": 3,\n            \"away_team_id\": 2,\n            \"home_team\": \"Arsenal\",\n            \"away_team\": \"Liverpool\",\n            \"home_score\": null,\n            \"away_score\": null,\n            \"played\": false\n        }\n    ]\n}"
+        }
+      ]
     },
     {
       "name": "GetPredictions",
@@ -88,7 +208,47 @@
           ]
         }
       },
-      "response": []
+      "response": [
+        {
+          "name": "GetPredictions",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/v1/predictions",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "predictions"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 25 May 2026 20:50:03 GMT"
+            },
+            {
+              "key": "Content-Length",
+              "value": "321"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"data\": [\n        {\n            \"team_id\": 1,\n            \"team_name\": \"Manchester City\",\n            \"championship_probability\": 26.889999999999997\n        },\n        {\n            \"team_id\": 2,\n            \"team_name\": \"Liverpool\",\n            \"championship_probability\": 59.199999999999996\n        },\n        {\n            \"team_id\": 3,\n            \"team_name\": \"Arsenal\",\n            \"championship_probability\": 9.47\n        },\n        {\n            \"team_id\": 4,\n            \"team_name\": \"Chelsea\",\n            \"championship_probability\": 4.44\n        }\n    ]\n}"
+        }
+      ]
     },
     {
       "name": "GetWeekMatches",
@@ -111,7 +271,49 @@
           ]
         }
       },
-      "response": []
+      "response": [
+        {
+          "name": "GetWeekMatches",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/v1/weeks/1/matches",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "weeks",
+                "1",
+                "matches"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 25 May 2026 20:50:13 GMT"
+            },
+            {
+              "key": "Content-Length",
+              "value": "301"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"week\": 1,\n            \"home_team_id\": 1,\n            \"away_team_id\": 2,\n            \"home_team\": \"Manchester City\",\n            \"away_team\": \"Liverpool\",\n            \"home_score\": 0,\n            \"away_score\": 3,\n            \"played\": true\n        },\n        {\n            \"id\": 2,\n            \"week\": 1,\n            \"home_team_id\": 3,\n            \"away_team_id\": 4,\n            \"home_team\": \"Arsenal\",\n            \"away_team\": \"Chelsea\",\n            \"home_score\": 2,\n            \"away_score\": 2,\n            \"played\": true\n        }\n    ]\n}"
+        }
+      ]
     },
     {
       "name": "PlayAllWeeks",
@@ -132,7 +334,47 @@
           ]
         }
       },
-      "response": []
+      "response": [
+        {
+          "name": "PlayAllWeeks",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/v1/play-all",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "play-all"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 25 May 2026 20:50:23 GMT"
+            },
+            {
+              "key": "Content-Length",
+              "value": "1579"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"data\": [\n        {\n            \"week\": 2,\n            \"matches\": [\n                {\n                    \"id\": 3,\n                    \"week\": 2,\n                    \"home_team_id\": 1,\n                    \"away_team_id\": 3,\n                    \"home_team\": \"Manchester City\",\n                    \"away_team\": \"Arsenal\",\n                    \"home_score\": 5,\n                    \"away_score\": 2,\n                    \"played\": true\n                },\n                {\n                    \"id\": 4,\n                    \"week\": 2,\n                    \"home_team_id\": 2,\n                    \"away_team_id\": 4,\n                    \"home_team\": \"Liverpool\",\n                    \"away_team\": \"Chelsea\",\n                    \"home_score\": 5,\n                    \"away_score\": 2,\n                    \"played\": true\n                }\n            ]\n        },\n        {\n            \"week\": 3,\n            \"matches\": [\n                {\n                    \"id\": 5,\n                    \"week\": 3,\n                    \"home_team_id\": 1,\n                    \"away_team_id\": 4,\n                    \"home_team\": \"Manchester City\",\n                    \"away_team\": \"Chelsea\",\n                    \"home_score\": 3,\n                    \"away_score\": 0,\n                    \"played\": true\n                },\n                {\n                    \"id\": 6,\n                    \"week\": 3,\n                    \"home_team_id\": 2,\n                    \"away_team_id\": 3,\n                    \"home_team\": \"Liverpool\",\n                    \"away_team\": \"Arsenal\",\n                    \"home_score\": 2,\n                    \"away_score\": 2,\n                    \"played\": true\n                }\n            ]\n        },\n        {\n            \"week\": 4,\n            \"matches\": [\n                {\n                    \"id\": 7,\n                    \"week\": 4,\n                    \"home_team_id\": 2,\n                    \"away_team_id\": 1,\n                    \"home_team\": \"Liverpool\",\n                    \"away_team\": \"Manchester City\",\n                    \"home_score\": 2,\n                    \"away_score\": 4,\n                    \"played\": true\n                },\n                {\n                    \"id\": 8,\n                    \"week\": 4,\n                    \"home_team_id\": 4,\n                    \"away_team_id\": 3,\n                    \"home_team\": \"Chelsea\",\n                    \"away_team\": \"Arsenal\",\n                    \"home_score\": 0,\n                    \"away_score\": 2,\n                    \"played\": true\n                }\n            ]\n        },\n        {\n            \"week\": 5,\n            \"matches\": [\n                {\n                    \"id\": 9,\n                    \"week\": 5,\n                    \"home_team_id\": 3,\n                    \"away_team_id\": 1,\n                    \"home_team\": \"Arsenal\",\n                    \"away_team\": \"Manchester City\",\n                    \"home_score\": 1,\n                    \"away_score\": 2,\n                    \"played\": true\n                },\n                {\n                    \"id\": 10,\n                    \"week\": 5,\n                    \"home_team_id\": 4,\n                    \"away_team_id\": 2,\n                    \"home_team\": \"Chelsea\",\n                    \"away_team\": \"Liverpool\",\n                    \"home_score\": 2,\n                    \"away_score\": 1,\n                    \"played\": true\n                }\n            ]\n        },\n        {\n            \"week\": 6,\n            \"matches\": [\n                {\n                    \"id\": 11,\n                    \"week\": 6,\n                    \"home_team_id\": 4,\n                    \"away_team_id\": 1,\n                    \"home_team\": \"Chelsea\",\n                    \"away_team\": \"Manchester City\",\n                    \"home_score\": 0,\n                    \"away_score\": 3,\n                    \"played\": true\n                },\n                {\n                    \"id\": 12,\n                    \"week\": 6,\n                    \"home_team_id\": 3,\n                    \"away_team_id\": 2,\n                    \"home_team\": \"Arsenal\",\n                    \"away_team\": \"Liverpool\",\n                    \"home_score\": 3,\n                    \"away_score\": 2,\n                    \"played\": true\n                }\n            ]\n        }\n    ]\n}"
+        }
+      ]
     },
     {
       "name": "PlayNextWeek",
@@ -155,7 +397,49 @@
           ]
         }
       },
-      "response": []
+      "response": [
+        {
+          "name": "PlayNextWeek",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/v1/weeks/next/play",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "weeks",
+                "next",
+                "play"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 25 May 2026 20:49:38 GMT"
+            },
+            {
+              "key": "Content-Length",
+              "value": "322"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"data\": {\n        \"week\": 1,\n        \"matches\": [\n            {\n                \"id\": 1,\n                \"week\": 1,\n                \"home_team_id\": 1,\n                \"away_team_id\": 2,\n                \"home_team\": \"Manchester City\",\n                \"away_team\": \"Liverpool\",\n                \"home_score\": 0,\n                \"away_score\": 3,\n                \"played\": true\n            },\n            {\n                \"id\": 2,\n                \"week\": 1,\n                \"home_team_id\": 3,\n                \"away_team_id\": 4,\n                \"home_team\": \"Arsenal\",\n                \"away_team\": \"Chelsea\",\n                \"home_score\": 2,\n                \"away_score\": 2,\n                \"played\": true\n            }\n        ]\n    }\n}"
+        }
+      ]
     },
     {
       "name": "EditMatchResult",
@@ -187,7 +471,58 @@
           ]
         }
       },
-      "response": []
+      "response": [
+        {
+          "name": "EditMatchResult",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"home_score\": 3,\r\n    \"away_score\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/v1/matches/5/result",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "matches",
+                "5",
+                "result"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 25 May 2026 20:50:34 GMT"
+            },
+            {
+              "key": "Content-Length",
+              "value": "554"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"data\": [\n        {\n            \"team_id\": 1,\n            \"team_name\": \"Manchester City\",\n            \"played\": 6,\n            \"won\": 5,\n            \"drawn\": 0,\n            \"lost\": 1,\n            \"goals_for\": 17,\n            \"goals_against\": 9,\n            \"goal_diff\": 8,\n            \"points\": 15\n        },\n        {\n            \"team_id\": 3,\n            \"team_name\": \"Arsenal\",\n            \"played\": 6,\n            \"won\": 2,\n            \"drawn\": 2,\n            \"lost\": 2,\n            \"goals_for\": 12,\n            \"goals_against\": 13,\n            \"goal_diff\": -1,\n            \"points\": 8\n        },\n        {\n            \"team_id\": 2,\n            \"team_name\": \"Liverpool\",\n            \"played\": 6,\n            \"won\": 2,\n            \"drawn\": 1,\n            \"lost\": 3,\n            \"goals_for\": 15,\n            \"goals_against\": 13,\n            \"goal_diff\": 2,\n            \"points\": 7\n        },\n        {\n            \"team_id\": 4,\n            \"team_name\": \"Chelsea\",\n            \"played\": 6,\n            \"won\": 1,\n            \"drawn\": 1,\n            \"lost\": 4,\n            \"goals_for\": 7,\n            \"goals_against\": 16,\n            \"goal_diff\": -9,\n            \"points\": 4\n        }\n    ]\n}"
+        }
+      ]
     }
   ]
 }
