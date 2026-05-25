@@ -19,7 +19,7 @@ To run this project locally, you only need to have the following installed on yo
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/](https://github.com/)FatihTirek/football-league.git
+   git clone https://github.com/FatihTirek/football-league.git
    cd football-league
 
 2. **Set up environment variables:**
