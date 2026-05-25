@@ -22,11 +22,13 @@ To run this project locally, you only need to have the following installed on yo
    git clone [https://github.com/](https://github.com/)FatihTirek/football-league.git
    cd football-league
 
-2. ## **Set up environment variables:**
-   Copy the example environment file to create your local .env configuration.
-   ```bash
-   cp .env.example .env
-   ```
+2. **Set up environment variables:**
+
+Copy the example environment file to create your local `.env` configuration.
+
+```bash
+cp .env.example .env
+```
 
 4. **Start the application:**
      Use Docker Compose to build the Go API and initialize the PostgreSQL database.
