@@ -23,20 +23,18 @@ To run this project locally, you only need to have the following installed on yo
    cd football-league
 
 2. **Set up environment variables:**
-    Copy the example environment file to create your local .env configuration.
+     Copy the example environment file to create your local .env configuration.
    ```bash
    cp .env.example .env
 
 3. **Start the application:**
-
-    Use Docker Compose to build the Go API and initialize the PostgreSQL database.
+     Use Docker Compose to build the Go API and initialize the PostgreSQL database.
    ```bash
    docker-compose up --build -d
 
 Note: The database schema (001_initial_schema.sql) will automatically seed the database on the very first boot.
 
 4. **Verify the services:**
-
     The GoLang API will be available at http://localhost:8080.
     The PostgreSQL database is exposed on port 5432 for local inspection (e.g., via DBeaver or DataGrip).
 
