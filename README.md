@@ -48,7 +48,6 @@ To run this project locally, you only need to have the following installed on yo
     ```bash
     docker-compose down
 
-
 ## 🧪 Testing the API (Postman)
 
 Since a frontend is not required for this task, the application is designed to be easily understandable and fully testable via API endpoints. 
