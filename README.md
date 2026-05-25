@@ -23,9 +23,10 @@ To run this project locally, you only need to have the following installed on yo
    cd football-league
 
 2. **Set up environment variables:**
-     Copy the example environment file to create your local .env configuration.
    ```bash
    cp .env.example .env
+   ```
+   Copy the example environment file to create your local .env configuration.
 
 3. **Start the application:**
      Use Docker Compose to build the Go API and initialize the PostgreSQL database.
