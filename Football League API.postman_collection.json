@@ -1,0 +1,193 @@
+{
+  "info": {
+    "_postman_id": "fea7659f-0500-4d73-9e48-7d052cb54c50",
+    "name": "Football League API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "33465091"
+  },
+  "item": [
+    {
+      "name": "GetTeams",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/teams",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "teams"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetStandings",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/standings",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "standings"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetAllMatches",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/matches",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "matches"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetPredictions",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/predictions",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "predictions"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetWeekMatches",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/weeks/1/matches",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "weeks",
+            "1",
+            "matches"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PlayAllWeeks",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/play-all",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "play-all"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PlayNextWeek",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/weeks/next/play",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "weeks",
+            "next",
+            "play"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "EditMatchResult",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"home_score\": 3,\r\n    \"away_score\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/matches/5/result",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "matches",
+            "5",
+            "result"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
