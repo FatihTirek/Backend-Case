@@ -1,0 +1,11 @@
+# Sensitive environment variables
+.env
+
+# Go specific files
+bin/
+*.exe
+*.so
+vendor/
+
+# OS specific files
+.DS_Store
