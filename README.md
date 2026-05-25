@@ -26,17 +26,17 @@ To run this project locally, you only need to have the following installed on yo
 
    Copy the example environment file to create your local `.env` configuration.
 
-```bash
-cp .env.example .env
-```
+   ```bash
+   cp .env.example .env
+   ```
 
 3. **Set up environment variables:**
 
    Use Docker Compose to build the Go API and initialize the PostgreSQL database. The database schema will be automatically applied on the first boot.
-
-```bash
-cp .env.example .env
-```
+   
+   ```bash
+   cp .env.example .env
+   ```
 
 4. **Verify the services:**
 
