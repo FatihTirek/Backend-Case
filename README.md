@@ -57,5 +57,5 @@ To make the evaluation process completely frictionless, I have included a compre
 
 1. **Locate the File:** Find the `Football League API.postman_collection` file in the root directory of this repository.
 2. **Import:** Open Postman, click **Import**, and select the `.json` file.
-3. [cite_start]**Pre-configured Environment:** All endpoints are already set up to hit `http://localhost:8080` with the correct headers and realistic JSON request bodies for features like editing match results[cite: 77].
+3. **Pre-configured Environment:** All endpoints are already set up to hit `http://localhost:8080` with the correct headers and realistic JSON request bodies for features like editing match results.
 4. **Saved Examples:** I have saved **Example Responses** for every request in the collection. You can click on the examples within Postman to see the exact expected JSON inputs and outputs without even needing to spin up the Docker container first!
