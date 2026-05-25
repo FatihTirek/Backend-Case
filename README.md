@@ -28,7 +28,7 @@ Run the script from your terminal using:
 bash myscript.sh
 ```
 
-2. **Set up environment variables:**
+2. ## **Set up environment variables:**
    Copy the example environment file to create your local .env configuration.
    ```bash
    cp .env.example .env
