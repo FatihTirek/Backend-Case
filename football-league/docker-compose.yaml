@@ -32,7 +32,7 @@ services:
       POSTGRES_DB:       ${DB_NAME}
     volumes:
       # Automatically initializes schema on very first boot
-      - ./migrations/001_initial_schema.sql:/docker-entrypoint-initdb.d/001_initial_schema.sql
+      # - ./migrations/001_initial_schema.sql:/docker-entrypoint-initdb.d/001_initial_schema.sql
       # Persists actual database binaries across container lifecycles
       - postgres_data:/var/lib/postgresql
     # Only expose database ports to the host machine in development mode

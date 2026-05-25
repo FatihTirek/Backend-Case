@@ -12,6 +12,8 @@ import (
 	"time"
 
 	_ "github.com/lib/pq" // registers the postgres driver with database/sql; blank import is intentional
+	"github.com/pressly/goose/v3"
+	"github.com/FatihTirek/football-league/migrations"
 
 	"github.com/FatihTirek/football-league/internal/engine"
 	"github.com/FatihTirek/football-league/internal/handler"
@@ -26,20 +28,18 @@ func main() {
     dbName := os.Getenv("DB_NAME")
     dbHost := os.Getenv("DB_HOST")
     dbPort := os.Getenv("DB_PORT")
-	sslMode := os.Getenv("DB_SSLMODE")
 
-	if dbUser == "" || dbPass == "" || dbName == "" || dbHost == "" || dbPort == "" || sslMode == "" {
+	if dbUser == "" || dbPass == "" || dbName == "" || dbHost == "" || dbPort == "" {
         log.Fatalf("one or more required database environment variables are missing.")
     }
 
 	dsn := fmt.Sprintf(
-		"host=%s port=%s user=%s password=%s dbname=%s sslmode=%s",
+		"host=%s port=%s user=%s password=%s dbname=%s sslmode=disable",
 		dbHost,
 		dbPort,
 		dbUser,
 		dbPass,
 		dbName,
-		sslMode,
 	)
 
 	db, err := sql.Open("postgres", dsn)
@@ -47,6 +47,16 @@ func main() {
 		log.Fatalf("failed to open database: %v", err)
 	}
 	defer db.Close()
+
+	// 2. Tell Goose to read your 001_initial_schema.sql
+    goose.SetBaseFS(migrations.FS)
+
+	// 3. Run it!
+    if err := goose.Up(db, "."); err != nil {
+        log.Fatal("Failed to run migrations: ", err)
+    }
+
+    log.Println("Database migrated and ready!")
 
 	// Tune the connection pool. For this 4-player simulation scale these
 	// defaults are generous, but they are good habits to set explicitly.

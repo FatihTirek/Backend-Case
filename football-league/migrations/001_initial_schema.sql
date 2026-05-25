@@ -5,7 +5,9 @@
 -- automatically on first startup. Safe to re-run (all statements are idempotent).
 -- =============================================================================
 
-BEGIN;
+-- BEGIN;
+
+-- +goose Up
 
 -- ── TEAMS ─────────────────────────────────────────────────────────────────────
 CREATE TABLE IF NOT EXISTS teams (
@@ -85,4 +87,4 @@ ON CONFLICT DO NOTHING;
 INSERT INTO standings (team_id) VALUES (1), (2), (3), (4)
 ON CONFLICT (team_id) DO NOTHING;
 
-COMMIT;
+-- COMMIT;
