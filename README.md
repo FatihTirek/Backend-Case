@@ -26,7 +26,7 @@ To run this project locally, you only need to have the following installed on yo
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/FatihTirek/football-league.git
+   git clone https://github.com/FatihTirek/Backend-Case.git
    cd football-league
 
 2. **Set up environment variables:**
@@ -37,7 +37,7 @@ To run this project locally, you only need to have the following installed on yo
    cp .env.example .env
    ```
 
-3. **Set up environment variables:**
+3. **Start the application:**
 
    Use Docker Compose to build the Go API and initialize the PostgreSQL database. The database schema will be automatically applied on the first boot.
    
@@ -47,7 +47,7 @@ To run this project locally, you only need to have the following installed on yo
 
 4. **Verify the services:**
 
-   The GoLang API will be available at http://localhost:8080.
+   The GoLang API will be available at http://localhost:8080/api/v1.
    
    The PostgreSQL database is exposed on port 5432 for local inspection (e.g., via DBeaver or DataGrip).
 
