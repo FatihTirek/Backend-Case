@@ -60,7 +60,7 @@ To run this project locally, you only need to have the following installed on yo
 ## Database & SQL
 
 As requested, the SQL schema and queries required to run this project are included:
-* **Schema:** Located in `migrations/001_initial_schema.sql`. This file is automatically executed by Docker upon the initial database creation, seeding the initial teams and fixtures.
+* **Schema:** Located in `migrations/001_initial_schema.sql`. The application automatically runs these migrations using Goose upon startup, ensuring the database is correctly initialized and seeded.
 * **Queries:** All raw SQL queries used for the simulation logic (fetching standings, updating match results, etc.) are written directly in the Go codebase. You can find them clearly defined in the `repository` folder.
 
 ---
