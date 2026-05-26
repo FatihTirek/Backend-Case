@@ -7,6 +7,855 @@
   },
   "item": [
     {
+      "name": "Cloud Endpoints",
+      "item": [
+        {
+          "name": "GetTeams",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://backend-case.onrender.com/api/v1/teams",
+              "protocol": "https",
+              "host": [
+                "backend-case",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "teams"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "GetTeams",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://backend-case.onrender.com/api/v1/teams",
+                  "protocol": "https",
+                  "host": [
+                    "backend-case",
+                    "onrender",
+                    "com"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "teams"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": ":status",
+                  "value": 200
+                },
+                {
+                  "key": "date",
+                  "value": "Tue, 26 May 2026 00:46:50 GMT"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "content-length",
+                  "value": "118"
+                },
+                {
+                  "key": "content-encoding",
+                  "value": "br"
+                },
+                {
+                  "key": "rndr-id",
+                  "value": "838d017f-6a10-4901"
+                },
+                {
+                  "key": "server",
+                  "value": "cloudflare"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "x-render-origin-server",
+                  "value": "Render"
+                },
+                {
+                  "key": "cf-cache-status",
+                  "value": "DYNAMIC"
+                },
+                {
+                  "key": "cf-ray",
+                  "value": "a018c3db9b5c4131-IST"
+                },
+                {
+                  "key": "alt-svc",
+                  "value": "h3=\":443\"; ma=86400"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Manchester City\",\n            \"attack\": 1.8,\n            \"defense\": 1.3\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Liverpool\",\n            \"attack\": 1.6,\n            \"defense\": 1.2\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Arsenal\",\n            \"attack\": 1.4,\n            \"defense\": 1.1\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Chelsea\",\n            \"attack\": 1.2,\n            \"defense\": 1\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "GetStandings",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://backend-case.onrender.com/api/v1/standings",
+              "protocol": "https",
+              "host": [
+                "backend-case",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "standings"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "GetStandings",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://backend-case.onrender.com/api/v1/standings",
+                  "protocol": "https",
+                  "host": [
+                    "backend-case",
+                    "onrender",
+                    "com"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "standings"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": ":status",
+                  "value": 200
+                },
+                {
+                  "key": "date",
+                  "value": "Tue, 26 May 2026 00:48:02 GMT"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "content-length",
+                  "value": "195"
+                },
+                {
+                  "key": "content-encoding",
+                  "value": "br"
+                },
+                {
+                  "key": "rndr-id",
+                  "value": "43568890-05d5-4567"
+                },
+                {
+                  "key": "server",
+                  "value": "cloudflare"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "x-render-origin-server",
+                  "value": "Render"
+                },
+                {
+                  "key": "cf-cache-status",
+                  "value": "DYNAMIC"
+                },
+                {
+                  "key": "cf-ray",
+                  "value": "a018c5a15ca9c73b-IST"
+                },
+                {
+                  "key": "alt-svc",
+                  "value": "h3=\":443\"; ma=86400"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": [\n        {\n            \"team_id\": 2,\n            \"team_name\": \"Liverpool\",\n            \"played\": 3,\n            \"won\": 2,\n            \"drawn\": 0,\n            \"lost\": 1,\n            \"goals_for\": 12,\n            \"goals_against\": 8,\n            \"goal_diff\": 4,\n            \"points\": 6\n        },\n        {\n            \"team_id\": 3,\n            \"team_name\": \"Arsenal\",\n            \"played\": 3,\n            \"won\": 1,\n            \"drawn\": 1,\n            \"lost\": 1,\n            \"goals_for\": 7,\n            \"goals_against\": 7,\n            \"goal_diff\": 0,\n            \"points\": 4\n        },\n        {\n            \"team_id\": 4,\n            \"team_name\": \"Chelsea\",\n            \"played\": 3,\n            \"won\": 1,\n            \"drawn\": 1,\n            \"lost\": 1,\n            \"goals_for\": 5,\n            \"goals_against\": 8,\n            \"goal_diff\": -3,\n            \"points\": 4\n        },\n        {\n            \"team_id\": 1,\n            \"team_name\": \"Manchester City\",\n            \"played\": 3,\n            \"won\": 1,\n            \"drawn\": 0,\n            \"lost\": 2,\n            \"goals_for\": 10,\n            \"goals_against\": 11,\n            \"goal_diff\": -1,\n            \"points\": 3\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "GetAllMatches",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://backend-case.onrender.com/api/v1/matches",
+              "protocol": "https",
+              "host": [
+                "backend-case",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "matches"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "GetAllMatches",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://backend-case.onrender.com/api/v1/matches",
+                  "protocol": "https",
+                  "host": [
+                    "backend-case",
+                    "onrender",
+                    "com"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "matches"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": ":status",
+                  "value": 200
+                },
+                {
+                  "key": "date",
+                  "value": "Tue, 26 May 2026 00:50:27 GMT"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "content-length",
+                  "value": "283"
+                },
+                {
+                  "key": "content-encoding",
+                  "value": "br"
+                },
+                {
+                  "key": "rndr-id",
+                  "value": "75512fcc-9ae3-4b56"
+                },
+                {
+                  "key": "server",
+                  "value": "cloudflare"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "x-render-origin-server",
+                  "value": "Render"
+                },
+                {
+                  "key": "cf-cache-status",
+                  "value": "DYNAMIC"
+                },
+                {
+                  "key": "cf-ray",
+                  "value": "a018c9252e14d61b-IST"
+                },
+                {
+                  "key": "alt-svc",
+                  "value": "h3=\":443\"; ma=86400"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"week\": 1,\n            \"home_team_id\": 1,\n            \"away_team_id\": 2,\n            \"home_team\": \"Manchester City\",\n            \"away_team\": \"Liverpool\",\n            \"home_score\": 3,\n            \"away_score\": 6,\n            \"played\": true\n        },\n        {\n            \"id\": 2,\n            \"week\": 1,\n            \"home_team_id\": 3,\n            \"away_team_id\": 4,\n            \"home_team\": \"Arsenal\",\n            \"away_team\": \"Chelsea\",\n            \"home_score\": 1,\n            \"away_score\": 1,\n            \"played\": true\n        },\n        {\n            \"id\": 3,\n            \"week\": 2,\n            \"home_team_id\": 1,\n            \"away_team_id\": 3,\n            \"home_team\": \"Manchester City\",\n            \"away_team\": \"Arsenal\",\n            \"home_score\": 4,\n            \"away_score\": 1,\n            \"played\": true\n        },\n        {\n            \"id\": 4,\n            \"week\": 2,\n            \"home_team_id\": 2,\n            \"away_team_id\": 4,\n            \"home_team\": \"Liverpool\",\n            \"away_team\": \"Chelsea\",\n            \"home_score\": 4,\n            \"away_score\": 0,\n            \"played\": true\n        },\n        {\n            \"id\": 5,\n            \"week\": 3,\n            \"home_team_id\": 1,\n            \"away_team_id\": 4,\n            \"home_team\": \"Manchester City\",\n            \"away_team\": \"Chelsea\",\n            \"home_score\": 3,\n            \"away_score\": 4,\n            \"played\": true\n        },\n        {\n            \"id\": 6,\n            \"week\": 3,\n            \"home_team_id\": 2,\n            \"away_team_id\": 3,\n            \"home_team\": \"Liverpool\",\n            \"away_team\": \"Arsenal\",\n            \"home_score\": 2,\n            \"away_score\": 5,\n            \"played\": true\n        },\n        {\n            \"id\": 7,\n            \"week\": 4,\n            \"home_team_id\": 2,\n            \"away_team_id\": 1,\n            \"home_team\": \"Liverpool\",\n            \"away_team\": \"Manchester City\",\n            \"home_score\": null,\n            \"away_score\": null,\n            \"played\": false\n        },\n        {\n            \"id\": 8,\n            \"week\": 4,\n            \"home_team_id\": 4,\n            \"away_team_id\": 3,\n            \"home_team\": \"Chelsea\",\n            \"away_team\": \"Arsenal\",\n            \"home_score\": null,\n            \"away_score\": null,\n            \"played\": false\n        },\n        {\n            \"id\": 9,\n            \"week\": 5,\n            \"home_team_id\": 3,\n            \"away_team_id\": 1,\n            \"home_team\": \"Arsenal\",\n            \"away_team\": \"Manchester City\",\n            \"home_score\": null,\n            \"away_score\": null,\n            \"played\": false\n        },\n        {\n            \"id\": 10,\n            \"week\": 5,\n            \"home_team_id\": 4,\n            \"away_team_id\": 2,\n            \"home_team\": \"Chelsea\",\n            \"away_team\": \"Liverpool\",\n            \"home_score\": null,\n            \"away_score\": null,\n            \"played\": false\n        },\n        {\n            \"id\": 11,\n            \"week\": 6,\n            \"home_team_id\": 4,\n            \"away_team_id\": 1,\n            \"home_team\": \"Chelsea\",\n            \"away_team\": \"Manchester City\",\n            \"home_score\": null,\n            \"away_score\": null,\n            \"played\": false\n        },\n        {\n            \"id\": 12,\n            \"week\": 6,\n            \"home_team_id\": 3,\n            \"away_team_id\": 2,\n            \"home_team\": \"Arsenal\",\n            \"away_team\": \"Liverpool\",\n            \"home_score\": null,\n            \"away_score\": null,\n            \"played\": false\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "GetPredictions",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://backend-case.onrender.com/api/v1/predictions",
+              "protocol": "https",
+              "host": [
+                "backend-case",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "predictions"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "GetPredictions",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://backend-case.onrender.com/api/v1/predictions",
+                  "protocol": "https",
+                  "host": [
+                    "backend-case",
+                    "onrender",
+                    "com"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "predictions"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": ":status",
+                  "value": 200
+                },
+                {
+                  "key": "date",
+                  "value": "Tue, 26 May 2026 00:50:36 GMT"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "content-length",
+                  "value": "137"
+                },
+                {
+                  "key": "content-encoding",
+                  "value": "br"
+                },
+                {
+                  "key": "rndr-id",
+                  "value": "b5ce1460-8e37-4f27"
+                },
+                {
+                  "key": "server",
+                  "value": "cloudflare"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "x-render-origin-server",
+                  "value": "Render"
+                },
+                {
+                  "key": "cf-cache-status",
+                  "value": "DYNAMIC"
+                },
+                {
+                  "key": "cf-ray",
+                  "value": "a018c961a8bfd61b-IST"
+                },
+                {
+                  "key": "alt-svc",
+                  "value": "h3=\":443\"; ma=86400"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": [\n        {\n            \"team_id\": 1,\n            \"team_name\": \"Manchester City\",\n            \"championship_probability\": 18.17\n        },\n        {\n            \"team_id\": 2,\n            \"team_name\": \"Liverpool\",\n            \"championship_probability\": 55.800000000000004\n        },\n        {\n            \"team_id\": 3,\n            \"team_name\": \"Arsenal\",\n            \"championship_probability\": 17.349999999999998\n        },\n        {\n            \"team_id\": 4,\n            \"team_name\": \"Chelsea\",\n            \"championship_probability\": 8.68\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "GetWeekMatches",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://backend-case.onrender.com/api/v1/weeks/3/matches",
+              "protocol": "https",
+              "host": [
+                "backend-case",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "weeks",
+                "3",
+                "matches"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "GetWeekMatches",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://backend-case.onrender.com/api/v1/weeks/3/matches",
+                  "protocol": "https",
+                  "host": [
+                    "backend-case",
+                    "onrender",
+                    "com"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "weeks",
+                    "3",
+                    "matches"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": ":status",
+                  "value": 200
+                },
+                {
+                  "key": "date",
+                  "value": "Tue, 26 May 2026 00:51:01 GMT"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "content-length",
+                  "value": "144"
+                },
+                {
+                  "key": "content-encoding",
+                  "value": "br"
+                },
+                {
+                  "key": "rndr-id",
+                  "value": "2c77ce2d-d9da-4192"
+                },
+                {
+                  "key": "server",
+                  "value": "cloudflare"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "x-render-origin-server",
+                  "value": "Render"
+                },
+                {
+                  "key": "cf-cache-status",
+                  "value": "DYNAMIC"
+                },
+                {
+                  "key": "cf-ray",
+                  "value": "a018c9fe1d82d61b-IST"
+                },
+                {
+                  "key": "alt-svc",
+                  "value": "h3=\":443\"; ma=86400"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": [\n        {\n            \"id\": 5,\n            \"week\": 3,\n            \"home_team_id\": 1,\n            \"away_team_id\": 4,\n            \"home_team\": \"Manchester City\",\n            \"away_team\": \"Chelsea\",\n            \"home_score\": 3,\n            \"away_score\": 4,\n            \"played\": true\n        },\n        {\n            \"id\": 6,\n            \"week\": 3,\n            \"home_team_id\": 2,\n            \"away_team_id\": 3,\n            \"home_team\": \"Liverpool\",\n            \"away_team\": \"Arsenal\",\n            \"home_score\": 2,\n            \"away_score\": 5,\n            \"played\": true\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "PlayAllWeeks",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "https://backend-case.onrender.com/api/v1/play-all",
+              "protocol": "https",
+              "host": [
+                "backend-case",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "play-all"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "PlayAllWeeks",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "https://backend-case.onrender.com/api/v1/play-all",
+                  "protocol": "https",
+                  "host": [
+                    "backend-case",
+                    "onrender",
+                    "com"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "play-all"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": ":status",
+                  "value": 200
+                },
+                {
+                  "key": "date",
+                  "value": "Tue, 26 May 2026 00:51:35 GMT"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "content-length",
+                  "value": "199"
+                },
+                {
+                  "key": "content-encoding",
+                  "value": "br"
+                },
+                {
+                  "key": "rndr-id",
+                  "value": "a3a1b9b8-d23d-4c7b"
+                },
+                {
+                  "key": "server",
+                  "value": "cloudflare"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "x-render-origin-server",
+                  "value": "Render"
+                },
+                {
+                  "key": "cf-cache-status",
+                  "value": "DYNAMIC"
+                },
+                {
+                  "key": "cf-ray",
+                  "value": "a018cad20a3ed61b-IST"
+                },
+                {
+                  "key": "alt-svc",
+                  "value": "h3=\":443\"; ma=86400"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": [\n        {\n            \"week\": 5,\n            \"matches\": [\n                {\n                    \"id\": 9,\n                    \"week\": 5,\n                    \"home_team_id\": 3,\n                    \"away_team_id\": 1,\n                    \"home_team\": \"Arsenal\",\n                    \"away_team\": \"Manchester City\",\n                    \"home_score\": 2,\n                    \"away_score\": 1,\n                    \"played\": true\n                },\n                {\n                    \"id\": 10,\n                    \"week\": 5,\n                    \"home_team_id\": 4,\n                    \"away_team_id\": 2,\n                    \"home_team\": \"Chelsea\",\n                    \"away_team\": \"Liverpool\",\n                    \"home_score\": 1,\n                    \"away_score\": 3,\n                    \"played\": true\n                }\n            ]\n        },\n        {\n            \"week\": 6,\n            \"matches\": [\n                {\n                    \"id\": 11,\n                    \"week\": 6,\n                    \"home_team_id\": 4,\n                    \"away_team_id\": 1,\n                    \"home_team\": \"Chelsea\",\n                    \"away_team\": \"Manchester City\",\n                    \"home_score\": 1,\n                    \"away_score\": 1,\n                    \"played\": true\n                },\n                {\n                    \"id\": 12,\n                    \"week\": 6,\n                    \"home_team_id\": 3,\n                    \"away_team_id\": 2,\n                    \"home_team\": \"Arsenal\",\n                    \"away_team\": \"Liverpool\",\n                    \"home_score\": 3,\n                    \"away_score\": 1,\n                    \"played\": true\n                }\n            ]\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "PlayNextWeek",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "https://backend-case.onrender.com/api/v1/weeks/next/play",
+              "protocol": "https",
+              "host": [
+                "backend-case",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "weeks",
+                "next",
+                "play"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "PlayNextWeek",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "https://backend-case.onrender.com/api/v1/weeks/next/play",
+                  "protocol": "https",
+                  "host": [
+                    "backend-case",
+                    "onrender",
+                    "com"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "weeks",
+                    "next",
+                    "play"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": ":status",
+                  "value": 200
+                },
+                {
+                  "key": "date",
+                  "value": "Tue, 26 May 2026 00:51:20 GMT"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "content-length",
+                  "value": "154"
+                },
+                {
+                  "key": "content-encoding",
+                  "value": "br"
+                },
+                {
+                  "key": "rndr-id",
+                  "value": "efa2834e-9856-4f3f"
+                },
+                {
+                  "key": "server",
+                  "value": "cloudflare"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "x-render-origin-server",
+                  "value": "Render"
+                },
+                {
+                  "key": "cf-cache-status",
+                  "value": "DYNAMIC"
+                },
+                {
+                  "key": "cf-ray",
+                  "value": "a018ca746f73d61b-IST"
+                },
+                {
+                  "key": "alt-svc",
+                  "value": "h3=\":443\"; ma=86400"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": {\n        \"week\": 4,\n        \"matches\": [\n            {\n                \"id\": 7,\n                \"week\": 4,\n                \"home_team_id\": 2,\n                \"away_team_id\": 1,\n                \"home_team\": \"Liverpool\",\n                \"away_team\": \"Manchester City\",\n                \"home_score\": 3,\n                \"away_score\": 2,\n                \"played\": true\n            },\n            {\n                \"id\": 8,\n                \"week\": 4,\n                \"home_team_id\": 4,\n                \"away_team_id\": 3,\n                \"home_team\": \"Chelsea\",\n                \"away_team\": \"Arsenal\",\n                \"home_score\": 3,\n                \"away_score\": 3,\n                \"played\": true\n            }\n        ]\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "ResetLeague",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "https://backend-case.onrender.com/api/v1/reset-league",
+              "protocol": "https",
+              "host": [
+                "backend-case",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "reset-league"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "EditMatchResult",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"home_score\": 2,\r\n    \"away_score\": 5\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://backend-case.onrender.com/api/v1/matches/9/result",
+              "protocol": "https",
+              "host": [
+                "backend-case",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "matches",
+                "9",
+                "result"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "EditMatchResult",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"home_score\": 2,\r\n    \"away_score\": 5\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://backend-case.onrender.com/api/v1/matches/9/result",
+                  "protocol": "https",
+                  "host": [
+                    "backend-case",
+                    "onrender",
+                    "com"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "matches",
+                    "9",
+                    "result"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": ":status",
+                  "value": 200
+                },
+                {
+                  "key": "date",
+                  "value": "Tue, 26 May 2026 00:52:19 GMT"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "content-length",
+                  "value": "199"
+                },
+                {
+                  "key": "content-encoding",
+                  "value": "br"
+                },
+                {
+                  "key": "rndr-id",
+                  "value": "0a016f22-4df1-4f4a"
+                },
+                {
+                  "key": "server",
+                  "value": "cloudflare"
+                },
+                {
+                  "key": "vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "x-render-origin-server",
+                  "value": "Render"
+                },
+                {
+                  "key": "cf-cache-status",
+                  "value": "DYNAMIC"
+                },
+                {
+                  "key": "cf-ray",
+                  "value": "a018cbe57e3cd61b-IST"
+                },
+                {
+                  "key": "alt-svc",
+                  "value": "h3=\":443\"; ma=86400"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": [\n        {\n            \"team_id\": 2,\n            \"team_name\": \"Liverpool\",\n            \"played\": 6,\n            \"won\": 4,\n            \"drawn\": 0,\n            \"lost\": 2,\n            \"goals_for\": 19,\n            \"goals_against\": 14,\n            \"goal_diff\": 5,\n            \"points\": 12\n        },\n        {\n            \"team_id\": 3,\n            \"team_name\": \"Arsenal\",\n            \"played\": 6,\n            \"won\": 2,\n            \"drawn\": 2,\n            \"lost\": 2,\n            \"goals_for\": 15,\n            \"goals_against\": 16,\n            \"goal_diff\": -1,\n            \"points\": 8\n        },\n        {\n            \"team_id\": 1,\n            \"team_name\": \"Manchester City\",\n            \"played\": 6,\n            \"won\": 2,\n            \"drawn\": 1,\n            \"lost\": 3,\n            \"goals_for\": 18,\n            \"goals_against\": 17,\n            \"goal_diff\": 1,\n            \"points\": 7\n        },\n        {\n            \"team_id\": 4,\n            \"team_name\": \"Chelsea\",\n            \"played\": 6,\n            \"won\": 1,\n            \"drawn\": 3,\n            \"lost\": 2,\n            \"goals_for\": 10,\n            \"goals_against\": 15,\n            \"goal_diff\": -5,\n            \"points\": 6\n        }\n    ]\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "GetTeams",
       "request": {
         "method": "GET",
@@ -438,6 +1287,67 @@
           ],
           "cookie": [],
           "body": "{\n    \"data\": {\n        \"week\": 1,\n        \"matches\": [\n            {\n                \"id\": 1,\n                \"week\": 1,\n                \"home_team_id\": 1,\n                \"away_team_id\": 2,\n                \"home_team\": \"Manchester City\",\n                \"away_team\": \"Liverpool\",\n                \"home_score\": 0,\n                \"away_score\": 3,\n                \"played\": true\n            },\n            {\n                \"id\": 2,\n                \"week\": 1,\n                \"home_team_id\": 3,\n                \"away_team_id\": 4,\n                \"home_team\": \"Arsenal\",\n                \"away_team\": \"Chelsea\",\n                \"home_score\": 2,\n                \"away_score\": 2,\n                \"played\": true\n            }\n        ]\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "ResetLeague",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/reset-league",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "reset-league"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "ResetLeague",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/v1/reset-league",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "reset-league"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 26 May 2026 00:39:46 GMT"
+            },
+            {
+              "key": "Content-Length",
+              "value": "48"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"data\": {\n        \"status\": \"league reset successfully\"\n    }\n}"
         }
       ]
     },
