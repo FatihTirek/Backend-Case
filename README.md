@@ -9,7 +9,7 @@ This project was built for the **Insider Development Intern Hiring Day Task**.
 ## ☁️ Live Demo (Cloud Deployment)
 This API is fully deployed and hosted on Render. You can interact with the live endpoints immediately without needing to set up the project locally.
 
-* **Live Base URL:** `https://your-app-name.onrender.com/api/v1`
+* **Live Base URL:** `https://backend-case.onrender.com/api/v1`
 
 > ⚠️ **Note on Performance:** This project is hosted on a free Render tier. Render automatically spins down free instances after a period of inactivity. If the API hasn't been used recently, **the very first request may be delayed by 50 seconds or more** while the server wakes up. Subsequent requests will be fast and responsive.
 
@@ -80,7 +80,7 @@ To make the evaluation process completely frictionless, I have included a compre
 
 ## 📖 API Documentation
 
-**Base URL:** `https://your-app-name.onrender.com/api/v1` 
+**Base URL:** `https://backend-case.onrender.com/api/v1` 
 *(Or `http://localhost:8080/api/v1` for local development)*
 
 ---
