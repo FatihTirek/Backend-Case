@@ -118,3 +118,13 @@ func (r *standingRepository) Recalculate(ctx context.Context) error {
 	}
 	return nil
 }
+
+func (r *standingRepository) Reset(ctx context.Context) error {	
+	_, err := r.db.ExecContext(ctx, 
+		`UPDATE standings SET played = 0, won = 0, drawn = 0, lost = 0, goals_for = 0, 
+		goals_against = 0, goal_diff = 0, points = 0`)
+	if err != nil {
+		return fmt.Errorf("standingRepo.Reset: %w", err)
+	}
+	return nil
+}

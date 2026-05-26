@@ -106,6 +106,17 @@ func (h *leagueHandler) PlayAll(w http.ResponseWriter, r *http.Request) {
 	writeJSON(w, http.StatusOK, results)
 }
 
+// ResetLeague godoc
+// POST /api/v1/reset-league
+// Resets the league to its initial state.
+func (h *leagueHandler) ResetLeague(w http.ResponseWriter, r *http.Request) {
+	if err := h.svc.ResetLeague(r.Context()); err != nil {
+		writeError(w, http.StatusInternalServerError, err.Error())
+		return
+	}
+	writeJSON(w, http.StatusOK, map[string]string{"status": "league reset successfully"})
+}
+
 // editResultRequest is the expected JSON body for EditMatchResult.
 type editResultRequest struct {
 	HomeScore int `json:"home_score"`

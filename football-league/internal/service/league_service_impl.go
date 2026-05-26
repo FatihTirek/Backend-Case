@@ -92,6 +92,16 @@ func (s *leagueService) PlayAll(ctx context.Context) ([]WeekResult, error) {
 	return results, nil
 }
 
+func (s *leagueService) ResetLeague(ctx context.Context) error {
+	if err := s.matchRepo.Reset(ctx); err != nil {
+		return err
+	}
+	if err := s.standingRepo.Reset(ctx); err != nil {
+		return err
+	}
+	return nil
+}
+
 // EditMatchResult updates one match score then recalculates all standings from scratch.
 // We never surgically adjust standings — we always recompute from the matches table,
 // which is the single source of truth. This avoids any stale-data bugs.

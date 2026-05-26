@@ -30,4 +30,7 @@ type MatchRepository interface {
 	// Implements the bonus "edit results" feature. Returns ErrMatchNotFound
 	// if the given matchID does not exist in the database.
 	UpdateResult(ctx context.Context, matchID, homeScore, awayScore int) error
+
+	// Reset clears all match results and resets the league to its initial state.
+	Reset(ctx context.Context) error
 }

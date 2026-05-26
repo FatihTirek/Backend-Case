@@ -21,5 +21,6 @@ type LeagueService interface {
 	GetWeekMatches(ctx context.Context, week int) ([]domain.Match, error)
 	PlayNextWeek(ctx context.Context) (*WeekResult, error)
 	PlayAll(ctx context.Context) ([]WeekResult, error)
+	ResetLeague(ctx context.Context) error
 	EditMatchResult(ctx context.Context, matchID, homeScore, awayScore int) ([]domain.Standing, error)
 }

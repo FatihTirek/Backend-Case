@@ -16,4 +16,7 @@ type StandingRepository interface {
 	// data always produces the same result. This property makes it safe to call
 	// after any match edit without worrying about double-counting or stale data.
 	Recalculate(ctx context.Context) error
+
+	// Reset clears all standings and resets the league to its initial state.
+	Reset(ctx context.Context) error
 }

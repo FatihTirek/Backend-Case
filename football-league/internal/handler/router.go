@@ -38,6 +38,7 @@ func NewRouter(ls service.LeagueService, ps service.PredictionService) http.Hand
 
 		r.Post("/weeks/next/play", lh.PlayNextWeek)
 		r.Post("/play-all", lh.PlayAll)
+		r.Post("/reset-league", lh.ResetLeague)
 
 		r.Put("/matches/{id}/result", lh.EditMatchResult)
 	})

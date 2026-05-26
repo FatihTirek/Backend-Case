@@ -166,3 +166,8 @@ func (r *matchRepository) UpdateResult(ctx context.Context, matchID, homeScore, 
 	}
 	return nil
 }
+
+func (r *matchRepository) Reset(ctx context.Context) error {
+	_, err := r.db.ExecContext(ctx, `UPDATE matches SET home_score = NULL, away_score = NULL, played = false`)
+	return err
+}
