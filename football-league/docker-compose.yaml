@@ -17,6 +17,7 @@ services:
       DB_NAME:     ${DB_NAME}
       PORT:        ${PORT}      # The internal port the Go web server listens on
       ENV_MODE:    ${ENV_MODE}  # e.g., 'development' or 'production'
+      DB_SSLMODE:  ${DB_SSLMODE}  # e.g., 'require' or 'disable'
     depends_on:
       postgres:
         condition: service_healthy

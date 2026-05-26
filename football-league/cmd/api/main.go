@@ -28,18 +28,20 @@ func main() {
     dbName := os.Getenv("DB_NAME")
     dbHost := os.Getenv("DB_HOST")
     dbPort := os.Getenv("DB_PORT")
+	sslMode := os.Getenv("DB_SSLMODE")
 
-	if dbUser == "" || dbPass == "" || dbName == "" || dbHost == "" || dbPort == "" {
+	if dbUser == "" || dbPass == "" || dbName == "" || dbHost == "" || dbPort == "" || sslMode == "" {
         log.Fatalf("one or more required database environment variables are missing.")
     }
 
 	dsn := fmt.Sprintf(
-		"host=%s port=%s user=%s password=%s dbname=%s sslmode=disable",
+		"host=%s port=%s user=%s password=%s dbname=%s sslmode=%s",
 		dbHost,
 		dbPort,
 		dbUser,
 		dbPass,
 		dbName,
+		sslMode,
 	)
 
 	db, err := sql.Open("postgres", dsn)
