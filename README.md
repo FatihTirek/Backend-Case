@@ -73,8 +73,10 @@ To make the evaluation process completely frictionless, I have included a compre
 
 1. **Locate the File:** Find the `Football League API.postman_collection` file in the root directory of this repository.
 2. **Import:** Open Postman, click **Import**, and select the `.json` file.
-3. **Pre-configured Environment:** The collection is designed to be used with the live cloud endpoint out of the box. You can easily switch the {{base_url}} variable to `http://localhost:8080/api/v1` if you are running it locally.
-4. **Saved Examples:** I have saved **Example Responses** for every request in the collection. You can click on the examples within Postman to see the exact expected JSON inputs and outputs without even needing to spin up the Docker container first!
+3. **Choose Your Environment:** Within the collection, you will find two folders:
+   * **Cloud Endpoints:** Pre-configured to point to the live Render deployment.
+   * **Local Endpoints:** Pre-configured to point to `http://localhost:8080` for local development.
+4. **Saved Examples:** I have saved **Example Responses** for every request in the collection. You can click on the examples within Postman to see the exact expected JSON inputs and outputs without sending a request.
 
 ---
 
