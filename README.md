@@ -27,7 +27,7 @@ To run this project locally, you only need to have the following installed on yo
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/FatihTirek/Backend-Case.git
-   cd football-league
+   cd Backend-Case/football-league
 
 2. **Set up environment variables:**
 
